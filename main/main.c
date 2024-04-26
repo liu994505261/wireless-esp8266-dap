@@ -73,6 +73,7 @@ void mdns_setup() {
 }
 
 void app_main() {
+   int test=10;
     // struct rst_info *rtc_info = system_get_rst_info();
 
     // os_printf("reset reason: %x\n", rtc_info->reason);
@@ -91,6 +92,7 @@ void app_main() {
     // }
 
     ESP_ERROR_CHECK(nvs_flash_init());
+   test =10*2+5; 
 
 #if (USE_UART_BRIDGE == 1)
     uart_bridge_init();
